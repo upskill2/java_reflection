@@ -1,4 +1,4 @@
-package exercise.session1;
+package exercise.session1_classes;
 
 public class GetPackageExample {
 
