@@ -44,8 +44,6 @@ e
 5src/main/java/exercise/session1_classes/Drawable.java,d\0\d0637f7c7c7907a3c650bd1dac1e202c4614d92b
 „
 Tsrc/main/java/exercise/session2_construcors/tictactoe/game/internal/HumanPlayer.java,3\2\3251c81a7ec1f204313bfb052c7971133feafbe5
-z
-Jsrc/main/java/exercise/session2_construcors/constructors_factory/Main.java,5\7\57b2e25009f00d425cf0bea69803e49cd6700ef4
 †
 Vsrc/main/java/exercise/session2_construcors/tictactoe/game/internal/InputProvider.java,7\3\73e27dcfd4d7896de0cd17a8f367e9631a321876
 a

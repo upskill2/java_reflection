@@ -46,8 +46,6 @@ Vsrc/main/java/exercise/session2_construcors/tictactoe/game/internal/InputProvid
 ^src/main/java/exercise/session2_construcors/tictactoe/game/internal/KeyboardInputProvider.java,9\9\99c40e0a94ae1209244a73188a4489d79a199e9d
 a
 1src/main/java/exercise/session1_classes/Main.java,b\1\b1cf5f05f8700e4f84edb0569ec4f565a8c06898
-z
-Jsrc/main/java/exercise/session2_construcors/constructors_factory/Main.java,5\7\57b2e25009f00d425cf0bea69803e49cd6700ef4
 
 Osrc/main/java/exercise/session2_construcors/tictactoe/game/internal/Player.java,1\0\10a90e3f66f700cbc9fa788dead25ff161740aca
 j

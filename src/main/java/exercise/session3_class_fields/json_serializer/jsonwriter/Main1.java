@@ -1,12 +1,12 @@
 package exercise.session3_class_fields.json_serializer.jsonwriter;
 
-import exercise.session3_class_fields.json_serializer.data.Address;
-import exercise.session3_class_fields.json_serializer.data.Company;
-import exercise.session3_class_fields.json_serializer.data.Person;
+import exercise.session3_class_fields.json_serializer.data1.Address;
+import exercise.session3_class_fields.json_serializer.data1.Company;
+import exercise.session3_class_fields.json_serializer.data1.Person;
 
 import static exercise.session3_class_fields.json_serializer.jsonwriter.Utils.objectToJson;
 
-public class Main {
+public class Main1 {
 
     public static void main (String[] args) throws IllegalAccessException {
 

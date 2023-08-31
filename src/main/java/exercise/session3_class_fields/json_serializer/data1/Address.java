@@ -1,4 +1,4 @@
-package exercise.session3_class_fields.json_serializer.data;
+package exercise.session3_class_fields.json_serializer.data1;
 
 public class Address {
 
