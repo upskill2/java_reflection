@@ -18,9 +18,6 @@ public class TestingFramework {
         }
 
         Method setupMethod = findMethodByName (methods, "setupTest");
-/*        if (setupMethod != null && setupMethod.getReturnType ().equals (void.class) && setupMethod.getParameterCount () == 0) {
-
-        }*/
 
         List<Method> testMethods = findMethodsByPrefix (methods, "test");
         for (Method testMethod : testMethods) {
