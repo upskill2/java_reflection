@@ -2,14 +2,57 @@ package exercise.session5_methods.discovery.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Helper {
 
+    public static List<Field> getAllFields (Class<?> dataClass) {
+
+        if (dataClass == null || dataClass.getClass ().equals (Object.class)) {
+            return Collections.emptyList ();
+        }
+
+        List<Field> fields = new ArrayList<> ();
+
+        fields.addAll (Arrays.asList (dataClass.getDeclaredFields ()));
+
+        if (dataClass.getSuperclass () != null) {
+            fields.addAll (getAllFields (dataClass.getSuperclass ()));
+        }
+
+        return fields;
+    }
+
+
+    public static void testSetters (Class<?> declaredClass) {
+
+        List<Field> fields = getAllFields (declaredClass);
+
+        for (Field field : fields) {
+            String setterName = "set" + capitalizeFirstLetter (field.getName ());
+
+            Method setterMethod = null;
+
+            try {
+                setterMethod = declaredClass.getMethod (setterName, field.getType ());
+            } catch (NoSuchMethodException e) {
+                throw new IllegalArgumentException (String.format ("Setter : %s not fount", setterName));
+            }
+
+            if (!setterMethod.getReturnType ().equals (void.class)) {
+                throw new IllegalArgumentException (String.format ("Setter : %s has return type %s but expected void",
+                        setterName,
+                        setterMethod.getReturnType ().getTypeName ()));
+            }
+
+        }
+
+
+    }
+
     public static void testGetters (Class<?> dataClass) {
 
-        Field[] fields = dataClass.getDeclaredFields ();
+        List<Field> fields = getAllFields (dataClass);
         Map<String, Method> methodNameToMethod = mapMethodNameToMethod (dataClass);
 
         for (Field field : fields) {

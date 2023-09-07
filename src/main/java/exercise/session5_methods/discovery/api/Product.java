@@ -10,6 +10,16 @@ public class Product {
 
     private Date expirationDate;
 
+    public void setAddress (Address address) {
+        this.address = address;
+    }
+
+    public Address getAddress () {
+        return address;
+    }
+
+    private Address address;
+
     public double getPrice () {
         return price;
     }
@@ -24,5 +34,21 @@ public class Product {
 
     public Date getExpirationDate () {
         return expirationDate;
+    }
+
+    public void setPrice (double price) {
+        this.price = price;
+    }
+
+    public void setName (String name) {
+        this.name = name;
+    }
+
+    public void setQuantity (long quantity) {
+        this.quantity = quantity;
+    }
+
+    public void setExpirationDate (Date expirationDate) {
+        this.expirationDate = expirationDate;
     }
 }
