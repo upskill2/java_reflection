@@ -1,0 +1,6 @@
+
+G	java:S106"+Replace this use of System.out by a logger.(“Ê»8ò’ÙØ¤1
+L	java:S106"+Replace this use of System.out by a logger.(ğ³æÂûÿÿÿÿ8™ìØ¤1
+G	java:S106"+Replace this use of System.out by a logger.(ğ¯Ş‚8™ìØ¤1
+w
+java:S1128"URemove this unused import 'exercise.session4_fields_modification.utils.ConfigParser'.( Ÿ¸şÿÿÿÿ8™ìØ¤1

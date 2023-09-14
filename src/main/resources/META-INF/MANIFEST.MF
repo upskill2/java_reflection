@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: exercise.session7_annotation.discovery.Main
+

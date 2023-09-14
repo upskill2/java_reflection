@@ -1,0 +1,8 @@
+
+b	java:S112f"FDefine and throw a dedicated exception instead of using a generic one.(âŠÉ8£Û‹Ô¤1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(¼Øûì8´Ü‹Ô¤1
+I
+java:S3011",This accessibility update should be removed.(˜ÂÓ˜8¶Ü‹Ô¤1
+•
+java:S1130]"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(ÿÙƒ~8»Ü‹Ô¤1

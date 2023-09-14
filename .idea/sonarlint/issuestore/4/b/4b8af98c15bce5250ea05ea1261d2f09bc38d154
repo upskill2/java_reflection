@@ -1,0 +1,10 @@
+
+m
+java:S3655("PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(’„8Ôƒšü¦1
+›
+java:S1130"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(ªù›“øÿÿÿÿ8æ¡°ü¦1
+]	java:S125	"<This block of commented-out lines of code should be removed.(Üûı”ùÿÿÿÿ8«µ¯ü¦1
+L	java:S106'"+Replace this use of System.out by a logger.(ÊæÎ¸ÿÿÿÿÿ8Øƒšü¦1
+G	java:S106("+Replace this use of System.out by a logger.(’„8Øƒšü¦1
+S
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8é¡°ü¦1

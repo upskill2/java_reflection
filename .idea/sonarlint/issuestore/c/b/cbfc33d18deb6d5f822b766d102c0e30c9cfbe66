@@ -1,0 +1,8 @@
+
+O
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8ö–§Ü¤1
+G	java:S106+"+Replace this use of System.out by a logger.(ûšıÎ8ŠÈ§Ü¤1
+L	java:S106,"+Replace this use of System.out by a logger.(Ø–ªùÿÿÿÿ8ò©©Ü¤1
+L	java:S106."+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8«ğ©Ü¤1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Ìø§Ü¤1

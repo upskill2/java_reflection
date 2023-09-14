@@ -1,0 +1,11 @@
+
+R
+java:S2065"0Remove the "transient" modifier from this field.(Ì¿Çùÿÿÿÿ8áºÇı¦1
+Y
+java:S1068"7Remove this unused "ZIP_CODE_MAX_DIGITS" private field.(İ¦À¡üÿÿÿÿ8ãºÇı¦1
+M
+java:S1068"+Remove this unused "zipCode" private field.(Ì¿Çùÿÿÿÿ8ãºÇı¦1
+G
+java:S1068"*Remove this unused "street" private field.(„ø²š8ãºÇı¦1
+O
+java:S1068"-Remove this unused "apartment" private field.(Á¥Ğ­ÿÿÿÿÿ8ãºÇı¦1

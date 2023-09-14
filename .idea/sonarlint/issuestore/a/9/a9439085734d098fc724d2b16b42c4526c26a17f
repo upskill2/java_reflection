@@ -1,0 +1,5 @@
+
+b	java:S112
+"FDefine and throw a dedicated exception instead of using a generic one.(Ή΄8λτ§ψ¦1
+o
+java:S6204?"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨Ή8­υ§ψ¦1

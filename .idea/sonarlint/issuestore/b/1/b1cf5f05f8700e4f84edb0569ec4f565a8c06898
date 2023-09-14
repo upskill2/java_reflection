@@ -1,0 +1,36 @@
+
+E
+java:S1604"(Make this anonymous inner class a lambda(Ü›Ï„8¤É‘› 1
+[
+java:S1854"?Remove this useless assignment to local variable "squareClass".(€Ùé_8¹ÄË¥Ÿ1
+\
+java:S1854"?Remove this useless assignment to local variable "hasMapclass".(æŒ°8¹ÄË¥Ÿ1
+a
+java:S1854"?Remove this useless assignment to local variable "stringClass".(ä°¿¹øÿÿÿÿ8¹ÄË¥Ÿ1
+R
+java:S1481"0Remove this unused "stringClass" local variable.(ä°¿¹øÿÿÿÿ8ºÄË¥Ÿ1
+c
+java:S2133"ARemove this object instantiation and use "HashMap.class" instead.(úÙ¡×øÿÿÿÿ8»ÄË¥Ÿ1
+M
+java:S1481"0Remove this unused "hasMapclass" local variable.(æŒ°8¼ÄË¥Ÿ1
+L
+java:S1481"0Remove this unused "squareClass" local variable.(€Ùé_8¼ÄË¥Ÿ1
+]	java:S125"<This block of commented-out lines of code should be removed.(·´Ê†ùÿÿÿÿ8¼ÄË¥Ÿ1
+_
+java:S2133"BRemove this object instantiation and use "Drawable.class" instead.(Ü›Ï„8½ÄË¥Ÿ1
+f
+java:S1854+"IRemove this useless assignment to local variable "implementedInterfaces".(ØËÄ8½ÄË¥Ÿ1
+G	java:S106'"+Replace this use of System.out by a logger.(î²ºË8¾ÄË¥Ÿ1
+W
+java:S1481+":Remove this unused "implementedInterfaces" local variable.(ØËÄ8¾ÄË¥Ÿ1
+G	java:S106."+Replace this use of System.out by a logger.(ßŞãÆ8¾ÄË¥Ÿ1
+F	java:S1063"+Replace this use of System.out by a logger.(Ÿ¶	8¿ÄË¥Ÿ1
+G	java:S1068"+Replace this use of System.out by a logger.(ˆ æ¥8¿ÄË¥Ÿ1
+L	java:S1069"+Replace this use of System.out by a logger.(‚£²´ÿÿÿÿÿ8¿ÄË¥Ÿ1
+L	java:S106:"+Replace this use of System.out by a logger.(ñÅİËüÿÿÿÿ8¿ÄË¥Ÿ1
+L	java:S106;"+Replace this use of System.out by a logger.(òÎúºøÿÿÿÿ8ÀÄË¥Ÿ1
+L	java:S106<"+Replace this use of System.out by a logger.(½ëŸ§ıÿÿÿÿ8ÀÄË¥Ÿ1
+G	java:S106="+Replace this use of System.out by a logger.(áÌ¶8ÀÄË¥Ÿ1
+G	java:S106>"+Replace this use of System.out by a logger.(Ãú½™8ÀÄË¥Ÿ1
+L	java:S106@"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8ÀÄË¥Ÿ1
+L	java:S106A"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¤§İ¦Ÿ1
