@@ -11,8 +11,11 @@ public class Main {
         BestGameFinder bestGameFinder = new BestGameFinder ();
 
         List<String> bestGamesInDescendingOrder =  execute (bestGameFinder);
-
         System.out.println ("Best games in descending order: " + bestGamesInDescendingOrder);
+        System.out.println ();
+
+        SqlQueryBuilder sqlQueryBuilder = new SqlQueryBuilder (List.of ("1", "2", "3"), 10, "games", List.of ("name", "price"));
+        System.out.println ("SQL query: " + execute (sqlQueryBuilder));
 
     }
 }

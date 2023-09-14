@@ -25,4 +25,10 @@ public class Annotations {
 
     }
 
+    @Retention (RetentionPolicy.RUNTIME)
+    @Target ({ElementType.FIELD, ElementType.PARAMETER})
+    public @interface Input {
+        String value ();
+    }
+
 }
