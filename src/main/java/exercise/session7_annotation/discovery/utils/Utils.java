@@ -74,14 +74,15 @@ public class Utils {
 
     }
 
-    private static List<Class<?>> getAllClasses (final String... packageNames) throws URISyntaxException, IOException {
+    public static List<Class<?>> getAllClasses (final String... packageNames) throws URISyntaxException, IOException {
 
         List<Class<?>> allClasses = new ArrayList<> ();
 
         for (String packageName : packageNames) {
             String packageRelativePath = packageName.replace (".", "/");
 
-            URI packageURI = Utils.class.getResource ("/" + packageRelativePath).toURI ();
+       //     URI packageURI = Utils.class.getResource ("/" + packageRelativePath).toURI ();
+            URI packageURI = exercise.session7_annotation.repeatable.utils.Utils.class.getResource ("/" + packageRelativePath).toURI ();
 
             if ("file".equals (packageURI.getScheme ())) {
                 Path packageFullPath = Paths.get (packageURI);

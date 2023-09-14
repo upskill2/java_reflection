@@ -1,5 +1,7 @@
 package exercise.session7_annotation.parameters;
 
+import exercise.session7_annotation.discovery.annotations.ScanPackages;
+
 import static exercise.session7_annotation.parameters.annotations.Annotations.*;
 
 import java.lang.reflect.Field;
