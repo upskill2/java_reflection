@@ -1,8 +1,11 @@
 package exercise.session7_annotation.discovery.utils;
 
 
+import exercise.session7_annotation.discovery.Main;
 import exercise.session7_annotation.discovery.annotations.InitializerClass;
 import exercise.session7_annotation.discovery.annotations.InitializerMethod;
+import exercise.session7_annotation.discovery.annotations.RetryOperation;
+import exercise.session7_annotation.discovery.annotations.ScanPackages;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -13,11 +16,17 @@ import java.nio.file.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 
 public class Utils {
 
-    public static void initialize (String... packages) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, URISyntaxException, IOException {
-        List<Class<?>> classes = getAllClasses (packages);
+    public static void initialize () throws Throwable {
+        ScanPackages scanPackages = Main.class.getAnnotation (ScanPackages.class);
+        if (scanPackages == null || scanPackages.packages ().length == 0) {
+            return;
+        }
+
+        List<Class<?>> classes = getAllClasses (scanPackages.packages ());
 
         for (Class<?> clazz : classes) {
 
@@ -28,9 +37,40 @@ public class Utils {
             List<Method> methods = getAllInitializedMethods (clazz);
 
             for (Method method : methods) {
-                method.invoke (instance);
+                callInitializingMethod (instance, method);
             }
         }
+
+    }
+
+    private static void callInitializingMethod (final Object instance, final Method method) throws Throwable {
+        RetryOperation retryOperation = method.getAnnotation (RetryOperation.class);
+
+        int numberOfRetries = retryOperation == null ? 0 : retryOperation.numberOfRetries ();
+
+        while (true) {
+            try {
+                method.invoke (instance);
+                break;
+            } catch (InvocationTargetException e) {
+                Throwable targetException = e.getTargetException ();
+
+                if (numberOfRetries > 0 && Set.of (retryOperation.retryExceptions ()).contains (targetException.getClass ())) {
+                    numberOfRetries--;
+                    System.out.println ("Retrying ......");
+                    Thread.sleep (retryOperation.durationBetweenRetriesMs ());
+                } else if (retryOperation != null) {
+                    throw new Exception (retryOperation.failureMessage (), targetException);
+                } else {
+                   throw targetException;
+                }
+
+
+            }
+
+
+        }
+
 
     }
 
